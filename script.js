@@ -7,7 +7,7 @@ const imageGrid = document.getElementById('image-grid');
 const imageFolderPath = 'imgs/';
 
 // List of image file names in the folder (you can fetch this dynamically from your server if needed)
-const imageFileNames = ['cdgshoes.jpg','jeans.jpg', 'northface.jpg', 'purpledress.jpg', 'skirt.jpg','whitetee.jpg'];
+const imageFileNames = ['img1.jpg','img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg','img6.jpg'];
 
 // Function to create and append image elements to the grid
 function displayImages() {
@@ -37,6 +37,11 @@ images.forEach(function(image, index) {
     modalContent.className = 'modal-content';
     modalContent.id = 'modalImage' + (index + 1);
 
+    var textContainer = document.createElement('div');
+    textContainer.className = 'text-container';
+    textContainer.innerHTML = `<p>This is some text about Image ${index}.</p>`;
+
+
     // Create a close button
     var closeButton = document.createElement('span');
     closeButton.className = 'close';
@@ -59,7 +64,7 @@ images.forEach(function(image, index) {
     // Append modal content and close button to the modal
     modal.appendChild(closeButton);
     //modalContent.appendChild(image2Container);
-    //modalContent.appendChild(textContainer);
+    modalContent.appendChild(textContainer);
     modal.appendChild(modalContent);
 
     // Append the modal to the body

@@ -11,12 +11,13 @@
 /* Modal Content */
 .modal-content {
     display: flex;
-    margin: 5% auto;
-    max-width: 50%;
-    max-height: 50%;
-    background-color: white;
+    margin: 20% auto;
+    max-width: 40%;
+    max-height: 40%;
+    background-color: rgb(40, 87, 40);
     border-radius: 10px;
     padding: 20px;
+    padding-right: 400px;
     align-items: center; /* Vertically center the content */
 }
 

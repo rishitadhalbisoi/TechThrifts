@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class = "header">
+        <div class = form>
+            <form action="process.php" method="post">
+                <label for = "user">Username</label>
+                <input type="text" id="user" name="user">
+                <br>
+                <label for = "type">Type of Clothing</label>
+                <select name="type" id="type">
+                    <option value="long_sleeve">Long Sleeve Shirt</option>
+                    <option value="short_sleeve">Short Sleeve Shirt</option>
+                    <option value="tank">Tank Top</option>
+                    <option value="other_tops">Other type of top</option>
+                    <option value="shorts">Shorts</option>
+                    <option value="jeans">Jeans</option>
+                    <option value="skirts">Skirts</option>
+                    <option value="other_bottoms">Other type of bottoms</option>
+                </select>
+                <br>
+                <label for = "size">Size</label>
+                <select name="size" id="size">
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="xl">Extra Large</option>
+                </select>
+                <br>
+                <label for = "conditon">Condition</label>
+                <select name="condition" id="condition">
+                    <option value="poor">Poor</option>
+                    <option value="gently_used">Gently Used</option>
+                    <option value="good">Good</option>
+                    <option value="like_new">Like New</option>
+                    <option value="not_worn">Never Worn</option>
+                </select>
+                <br>
+                <label for = "price">Price</label>
+                <input type="text" id="price" name="price">
+                <br>
+                <label for = "desc">Description</label>
+                <input type="text" id="desc" name="desc">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                </form>
+        </div>
+    </section>
+<h1></h1>
+
+
+</body>
+</html>
