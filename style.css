@@ -42,8 +42,8 @@
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid plum;
-    background:plum;
+    border: 1px solid rgb(22, 49, 22);
+    background:rgb(51, 110, 51);
     transition: 1s;
 }
 .header2 {
@@ -55,7 +55,7 @@
 }
 .text-box2{
     width:90%;
-    color: rgb(101, 95, 95);
+    color: rgb(40, 87, 40);
     position:absolute;
     top: 50%;
     left: 50%;
@@ -69,7 +69,7 @@
 .text-box2 p{
     margin: 10px 0 30px;
     font-size: 14px;
-    color: rgb(101, 95, 95);
+    color: rgb(40, 87, 40);
 }
 nav{
     display: flex;
@@ -81,45 +81,22 @@ nav img {
     width: 130px;
     margin-left: -40px;
 }
-.nav-links{
-    flex:1;
-    text-align: right;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: rgb(181, 100, 181);
-    text-decoration: none;
-    font-size: 13px;
-}
-.nav-links ul li::after{
-    content:'';
-    width: 0%;
-    height: 2px;
-    background: plum;
-    display: block;
-    margin:auto;
-    transition: 0.5s;
-}
 .hero-btn2{
     display: inline-block;
     text-decoration: none;
-    color:rgb(101, 95, 95);
-    border: 1px solid rgb(181, 100, 181);
+    color:#eed9c4	;
+    border: 1px solid rgb(40, 87, 40);
     padding: 10px 24px;
     font-size: 19px;
-    background: transparent;
+    background:rgb(40, 87, 40);
     position: center;
     cursor: pointer;
     justify-content: center;
 }
 .hero-btn2:hover{
-    border: 1px solid plum;
-    background:plum;
+    border: 1px solid rgb(28, 65, 28);
+    background:rgb(51, 110, 51);
+    color:#eed9c4	;
     transition: 1s;
 }
 
@@ -130,7 +107,7 @@ nav img {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(190, 139, 190);
+    background-color: rgb(28, 65, 28);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -140,13 +117,13 @@ nav img {
     padding: 8px 6px 8px 28px;
     text-decoration: none;
     font-size: 20px;
-    color: #f0eeee;
+    color: #eed9c4;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: rgb(62, 61, 61);
+    color: rgb(178, 176, 130);
   }
   
   .sidenav .closebtn {
@@ -156,3 +133,93 @@ nav img {
     font-size: 36px;
     margin-left: 50px;
   }
+  #button-container {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+#button-image {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.text-box3{
+    width:90%;
+    color: rgb(40, 87, 40);
+    position:absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box3 h1{
+    font-size: 52px;
+}
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+    font-size: 15px;
+    text-align: left;
+
+}
+.tab.active h3 {
+    font-size: 18px;
+    text-align: left;
+}
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: rgb(40, 87, 40);
+    color: #eed9c4;
+    border: #fff;
+    flex: 1;
+    text-align: center;
+}
+.tab-button:hover {
+    color: rgb(178, 176, 130);
+}
+.form{
+    display: table;
+    background: rgb(40, 87, 40);
+    padding: 30px 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 14px;
+    color: #eed9c4;
+    
+}
+input[type=text] {
+    width: 90%;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text], select {
+    width: 90%;
+    padding: 2px 2px;
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type=submit] {
+    padding: 6px;
+}
