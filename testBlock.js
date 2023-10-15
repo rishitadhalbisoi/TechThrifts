@@ -1,11 +1,11 @@
 // Define your image data (image URLs and descriptions)
 const imageData = [
-    { src: 'imgs/img1.jpg', title: 'CDG Converse', text: 'Description for Image 1', price: '$60'},
-    { src: 'imgs/img2.jpg', title: 'Grey Jeans', text: 'Description for Image 2', price: 60 },
-    { src: 'imgs/img3.jpg', title: 'North Face Jacket', text: 'Description for Image 3', price: 60 },
-    { src: 'imgs/img4.jpg', title: 'Purple Dress', text: 'Description for Image 4', price: 60 },
-    { src: 'imgs/img5.jpg', title: 'Denim Skirt', text: 'Description for Image 5', price: 60 },
-    { src: 'imgs/img6.jpg', title: 'John Galt shirt', text: 'Description for Image 6', price: 60},
+    { src: 'imgs/img1.jpg', title: 'CDG Converse', text: 'Posted by @risha', price: '$60'},
+    { src: 'imgs/img2.jpg', title: 'Grey Jeans', text: 'Posted by @trisha', price: '$60' },
+    { src: 'imgs/img3.jpg', title: 'North Face Jacket', text: 'Posted by @shradda', price: '$60' },
+    { src: 'imgs/img4.jpg', title: 'Purple Dress', text: 'Posted by @varsha', price: '$60'},
+    { src: 'imgs/img5.jpg', title: 'Denim Skirt', text: 'Posted by @m4rky', price: '$60' },
+    { src: 'imgs/img6.jpg', title: 'John Galt shirt', text: 'Posted by @lucy', text: '$60'},
 
 
     // Add more image data as needed
@@ -35,8 +35,11 @@ function openModal(data) {
     
     const modalPrice = document.getElementById('modal-price');
 
+    modalText.setAttribute('style', 'white-space: pre;');
+
     modalTitle.textContent = data.title;
-    modalText.textContent = data.text;
+    modalText.textContent = data.text + "\r\n";
+    modalText.textContent += data.price;
     modalImage.src = data.src;
     modalImage.alt = data.title;
     
