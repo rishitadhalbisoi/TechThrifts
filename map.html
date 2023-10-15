@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class = "header2">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href = "homepg.html" >home</a>
+            <a href = "discover.html">discover</a>
+            <a href = "events.html">events</a>
+            <a href = "map.html">map</a>
+            <a href = "account.html">account</a>
+    </div>
+    <div id="button-container">
+        <a href = "account.html">
+            <img id="button-image" src="heart.png" alt = "Click Me"></a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer; position: right;" onclick="openNav()">&#9776;</span>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            <div class = "text-box2">
+                <h1>Events Map</h1>
+                <p></p>
+                </div>
+               
+</body>
+</html>

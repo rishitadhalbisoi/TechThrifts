@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class = "header2">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href = "homepg.html" >home</a>
+            <a href = "discover.html">discover</a>
+            <a href = "events.html">events</a>
+            <a href = "map.html">map</a>
+            <a href = "account.html">account</a>
+    </div>
+    <div id="button-container">
+      <a href = "account.html">
+        <img id="button-image" src="heart.png" alt = "Click Me"></a>
+  </div>
+
+    <span style="font-size:30px;cursor:pointer; position: right;" onclick="openNav()">&#9776;</span>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+
+            <div class = "text-box3">
+            <h1>Account</h1>
+           
+            <br>
+
+            <div class="tabs">
+              <button class="tab-button" onclick="openTab('tab1')">Selling</button>
+              <button class="tab-button" onclick="openTab('tab2')">Sold</button>
+              <button class="tab-button" onclick="openTab('tab3')">Favorites</button>
+          </div>
+      
+          <div id="tab1" class="tab active">
+            <br>
+              <h3>items you're selling</h2>
+                <br>
+              <p>images loading ...</p>
+          </div>
+      
+          <div id="tab2" class="tab active">
+            <br>
+              <h3>items you've sold</h2>
+                <br>
+              <p>images loading...</p>
+          </div>
+      
+          <div id="tab3" class="tab active">
+            <br>
+              <h3>items you've liked</h2>
+                <br>
+              <p>this is private to you</p>
+          </div>
+      
+          <script>
+              // JavaScript function to open a tab
+              function openTab(tabId) {
+                  // Get all tabs and tab buttons
+                  const tabs = document.querySelectorAll('.tab');
+                  const tabButtons = document.querySelectorAll('.tab-button');
+      
+                  // Hide all tabs and deactivate all tab buttons
+                  tabs.forEach(tab => tab.classList.remove('active'));
+                  tabButtons.forEach(button => button.classList.remove('active'));
+      
+                  // Show the selected tab and activate the corresponding tab button
+                  document.getElementById(tabId).classList.add('active');
+                  document.querySelector(`button[data-tab="${tabId}"]`).classList.add('active');
+              }
+      
+              // Initially, open the first tab
+              openTab('tab1');
+          </script>
+           </div>
+               
+</body>
+</html>
