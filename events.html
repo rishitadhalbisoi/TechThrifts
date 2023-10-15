@@ -7,6 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+            grid-gap: 10px; /* Adjust the gap between grid items */
+            padding:30px;
+            padding-top: 300px;
+            
+    }
+
+    .grid-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        background-color:rgb(40, 87, 40);
+        padding-bottom:50px;
+        
+        
+    }
+
+    e1 {
+        font-size: 30px;
+        color:#eed9c4
+    }
+
+    e2 {
+        color:#eed9c4;
+        font-size:16px;
+    }
+</style>
 </head>
 <body>
     <section class = "header2">
@@ -16,7 +47,7 @@
             <a href = "homepg.html" >home</a>
             <a href = "discover.html">discover</a>
             <a href = "events.html">events</a>
-            <a href = "map.html">map</a>
+            <a href = "index.html">map</a>
             <a href = "account.html">account</a>
     </div>
     <div id="button-container">
@@ -33,10 +64,27 @@
               document.getElementById("mySidenav").style.width = "0";
             }
             </script>
-        <div class = "text-box2">
-            <h1>Events</h1>
-            <p>find the next pop ups at georgia tech!</p>
-            </div>
+        
                
 </body>
+<div class = "text-box3">
+    <h1>Events</h1>
+    <p>find the next pop ups at georgia tech!</p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <e1>Buzz Thrifts<br> @ Tech Green<br><br></e1>
+            <e2>Every Wednesday at 3pm</e2>
+        </div>
+        <div class="grid-item">
+            <e1>Ramblin Finds <br>@ Student Center <br><br></e1>
+            <e2>Thursday Oct 19, 3pm</e2>
+        </div>
+        <div class="grid-item">
+            <e1>EcoBuzz<br> @ Willage <br><br></e1>
+            <e2>Tuesday Oct 31, 6pm</e2>
+        </div>
+    </div>
+</div>
+
 </html>

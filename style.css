@@ -223,3 +223,7 @@ input[type=text], select {
 input[type=submit] {
     padding: 6px;
 }
+#map {
+    height: 700px;
+    width: 100%;
+}
