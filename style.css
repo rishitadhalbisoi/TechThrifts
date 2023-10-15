@@ -4,6 +4,28 @@
     font-family: 'Poppins', sans-serif;
 
 }
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eed9c4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px; /* Adjust the border-radius for roundness */
+    cursor: pointer;
+    font-size: 40px;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    
+}
+
+.rounded-button:hover {
+    background-color: rgb(40, 87, 40);
+}
 .header {
     min-height: 100vh;
     width: 100%;
@@ -23,11 +45,13 @@
 }
 .text-box h1{
     font-size: 62px;
+    font-family: 'Poppins', sans-serif;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 .hero-btn{
     display: inline-block;
@@ -40,11 +64,13 @@
     background: transparent;
     position: relative;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 .hero-btn:hover{
     border: 1px solid rgb(22, 49, 22);
     background:rgb(51, 110, 51);
     transition: 1s;
+    font-family: 'Poppins', sans-serif;
 }
 .header2 {
     min-height: 100vh;
